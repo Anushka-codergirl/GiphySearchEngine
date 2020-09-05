@@ -1,0 +1,75 @@
+body {
+	width: 80%;
+	max-width: 1024px;
+	margin: 0 auto;
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab );
+	background-size: 400% 400%;
+	-webkit-animation: gradientBG 5s ease-in-out infinite;
+	animation: gradientBG 5s ease-in-out infinite;
+}
+@-webkit-keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+@keyframes gradientBG {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+.line-drawing-demo{
+	display: flex;
+	margin-top:50px;
+
+	align-items: center;
+	justify-content: center;
+}
+
+.container-padding50 {
+	padding-top: 50px;
+}
+
+.container-textinput {
+	width: 80%;
+	display: inline-block;
+	padding: 20px;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+}
+
+.container-button {
+	width: 10%;
+	display: inline-block;
+	padding: 20px;
+	background-color: green;
+	color: white;
+	font-size: 16px;
+	font-family: Helvetica, sans-serif;
+	border: 1px solid green;
+
+}
+
+.container-button:hover{
+	background:#fff;
+	box-shadow:0px 2px 10px 5px #97B1BF;
+	color:#000;
+}
+
+.container-image {
+	width: 30%;
+	display: block;
+	float: left;
+	margin-right:3%;
+}
