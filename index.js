@@ -30,7 +30,8 @@ function getUserInput() {
 
 
 function searchGiphy( searchQuery ) {
-	var url = "https://api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&q=" + searchQuery;
+	var apiKey= env.API_KEY;
+	var url = "https://api.giphy.com/v1/gifs/search?api_key="+ apiKey + "&q=" + searchQuery;
 
 	// AJAX Request
 	var GiphyAJAXCall = new XMLHttpRequest();
